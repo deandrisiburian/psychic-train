@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>DARK ONE - EXPLOIT | MOBILE ELITE</title>
+    <title>ONEXRAT</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;600;700;900&display=swap');
 
@@ -425,17 +425,14 @@
 
     <!-- LOGIN PAGE + VIDEO AUTOPLAY LOOP NO CONTROLS -->
     <section class="page active" id="loginPage">
-        <div class="logo">DARK<span>ONE</span></div>
-        <p class="subtitle">Authorized Access Only</p>
         <div class="video-section">
             <video id="loginVideo" autoplay loop muted playsinline disableRemotePlayback>
                 <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
             </video>
-            <div class="video-caption">⚡ DARK ONE SECURE ACCESS ⚡</div>
         </div>
         <div class="container" id="loginContainer">
             <h2 class="container-title">Login</h2>
-            <p class="container-desc">Masuk ke sistem DARK ONE</p>
+            <p class="container-desc">Masuk ke sistem ONEXRAT</p>
             <div class="input-group">
                 <label>Username</label>
                 <input type="text" id="loginUser" placeholder="Masukkan username" autocomplete="off">
@@ -450,16 +447,16 @@
             <button class="btn btn-primary" id="loginBtn">Masuk</button>
             <div class="switch-link">Belum punya akun? <a onclick="showPage('registerPage')">Daftar</a></div>
         </div>
-        <p class="footer-text">COMMANDER AGUS - DARK ONE</p>
+        <p class="footer-text">EPANDLABS - ONEXRAT</p>
     </section>
 
     <!-- REGISTER PAGE (video still but elegant) -->
     <section class="page" id="registerPage">
-        <div class="logo">DARK<span>ONE</span></div>
+        <div class="logo">ONEXRAT</div>
         <p class="subtitle">Authorized Access Only</p>
         <div class="container" id="regContainer">
             <h2 class="container-title">Register</h2>
-            <p class="container-desc">Buat akun baru DARK ONE</p>
+            <p class="container-desc">Buat akun baru ONEXRAT</p>
             <div class="input-group">
                 <label>Username</label>
                 <input type="text" id="regUser" placeholder="Buat username (min 4 karakter)" autocomplete="off">
@@ -475,22 +472,22 @@
             <button class="btn btn-primary" id="regBtn">Daftar</button>
             <div class="switch-link">Sudah punya akun? <a onclick="showPage('loginPage')">Masuk</a></div>
         </div>
-        <p class="footer-text">COMMANDER AGUS - DARK ONE</p>
+        <p class="footer-text">EPANDLABS - ONEXRAT</p>
     </section>
 
     <!-- BOTTOM NAVIGATION (mobile) -->
     <div class="bottom-nav" id="bottomNav" style="display: none;">
         <button class="nav-item" data-nav="exploitPage" onclick="navigateBottom('exploitPage', this)">
             <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            <span>Exploit</span>
+            <span>BUG</span>
         </button>
         <button class="nav-item" data-nav="aiPage" onclick="navigateBottom('aiPage', this)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
-            <span>AI Chat</span>
+            <span>AI</span>
         </button>
         <button class="nav-item logout-item" onclick="logout()">
             <svg viewBox="0 0 24 24" stroke="currentColor"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-            <span>Logout</span>
+            <span>LOGOUT</span>
         </button>
     </div>
 
@@ -500,8 +497,7 @@
             <video id="exploitVideo" autoplay loop muted playsinline disableRemotePlayback>
                 <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCar.mp4" type="video/mp4">
             </video>
-            <div class="video-caption">⚡ EXPLOIT MODE - TARGET LOCK ⚡</div>
-        </div>
+            </div>
         <div class="container">
             <h2 class="container-title">Bug Exploit</h2>
             <p class="container-desc">Pilih metode dan masukkan target</p>
@@ -513,9 +509,9 @@
                 <label>Select Bug Exploit Type</label>
                 <select id="method">
                     <option value="">-- SELECT EXPLOIT --</option>
-                    <option value="blank">DARK ONE BLANK RENDER</option>
-                    <option value="forclose">DARK ONE FORCLOSE 24J</option>
-                    <option value="delay">DARK ONE ULTIMATE DELAY</option>
+                    <option value="blank">ONEXRAT BLANK RENDER</option>
+                    <option value="forclose">ONEXRAT FORCLOSE 24J</option>
+                    <option value="delay">ONEXRAT ULTIMATE DELAY</option>
                 </select>
             </div>
             <button class="btn btn-primary" id="sendBtn">Launch Attack</button>
@@ -525,8 +521,8 @@
     <!-- AI CHAT PAGE -->
     <section class="page dashboard-page" id="aiPage">
         <div class="chat-container">
-            <div class="chat-header"><div class="chat-avatar">AI</div><div class="chat-header-info"><h3>DARK ONE AI</h3><p>Online</p></div></div>
-            <div class="chat-messages" id="chatMessages"><div class="msg msg-bot">Halo, saya DARK ONE AI. Ada yang bisa saya bantu?</div></div>
+            <div class="chat-header"><div class="chat-avatar">AI</div><div class="chat-header-info"><h3>ONE AI</h3><p>Online</p></div></div>
+            <div class="chat-messages" id="chatMessages"><div class="msg msg-bot">Halo, saya ONE AI. Ada yang bisa saya bantu?</div></div>
             <div class="chat-input-area"><input type="text" id="aiInput" placeholder="Ketik pesan..." autocomplete="off"><button class="chat-send-btn" id="aiSendBtn">➤</button></div>
         </div>
     </section>
